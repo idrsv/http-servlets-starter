@@ -13,6 +13,7 @@ public class UrlExample {
 
     private static void checkGoogle() throws IOException {
         var url = new URL("https://www.google.com");//адрес по которому мы будем обращаться
+
         var urlConnection = url.openConnection();
         urlConnection.setDoOutput(true);
         try (var outputStream = urlConnection.getOutputStream()) {
